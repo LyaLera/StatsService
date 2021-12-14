@@ -16,7 +16,6 @@ class StatsServiceTest {
         assertEquals(expected, actual);
     }
 
-    // здест должен быть тест на среднее значение
     @Test
     void shouldFindAvg() {
         StatsService service = new StatsService();
