@@ -41,7 +41,7 @@ public class StatsService {
     public int findNumberOfSalesLowerAvg(int[]sales) {
         int numberOfMonth = 0;
         int month = 0;
-        int average = 15;
+        int average = findAvg(sales);
         for (int sale : sales) {
             if (sale < average) {
                 numberOfMonth +=1;
@@ -54,7 +54,7 @@ public class StatsService {
     public int findNumberOfSalesUpperAvg(int[]sales) {
         int numberOfMonth = 0;
         int month = 0;
-        int average = 15;
+        int average = findAvg(sales);
         for (int sale : sales) {
             if (sale > average) {
                 numberOfMonth +=1;
